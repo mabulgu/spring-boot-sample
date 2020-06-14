@@ -1,0 +1,6 @@
+library "foobar"
+
+javaBuildPlugin {
+    environment = "dev"
+    appName = "sb-sample"
+}
