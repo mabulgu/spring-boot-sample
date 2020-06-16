@@ -1,0 +1,8 @@
+library "foobar"
+
+javaDeployPlugin {
+    environment = "dev"
+    appName = "sb-sample"
+    port = 9090
+    managementPort = 9090
+}
