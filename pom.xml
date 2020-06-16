@@ -18,6 +18,13 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://nexus3-nexus.apps.shared-na4.na4.openshift.opentlc.com/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -46,6 +53,19 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.1</version>
+				<executions>
+				   <execution>
+					  <id>default-deploy</id>
+					  <phase>deploy</phase>
+					  <goals>
+						 <goal>deploy</goal>
+					  </goals>
+				   </execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
