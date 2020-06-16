@@ -2,7 +2,7 @@ library "foobar"
 
 javaDeployPlugin {
     environment = "dev"
-    appName = "bonus-api"
-    port = 9036
-    managementPort = 8036
+    appName = "sb-sample"
+    port = 9090
+    managementPort = 9090
 }
