@@ -1,6 +1,7 @@
-library "foobar"
+library "jenkins-shared-libraries"
 
 javaBuildPlugin {
     environment = "dev"
     appName = "sb-sample"
 }
+
