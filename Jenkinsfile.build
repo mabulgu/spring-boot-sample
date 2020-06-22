@@ -1,2 +1,5 @@
-println "hello from build"            
+            stage("Checkout") {
+                checkout scm
+println "hello from build" 
+}
 
