@@ -1,6 +1,3 @@
-library "jenkins-shared-libraries"
-
-javaBuildPlugin {
-    appName = "sb-sample"
+stage("Checkout") {
+print("hello from build")            
 }
-
